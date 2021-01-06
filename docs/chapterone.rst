@@ -1,4 +1,4 @@
-.. _chapter1:
+.. _chapterone:
 
 Vector and Matrix
 =================
