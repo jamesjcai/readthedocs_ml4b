@@ -1,7 +1,7 @@
 .. _refs:
 
-External resourcesx
-===================
+External resources
+==================
 
 - Kevin Murphy: https://probml.github.io/pml-book/book1.html
 - David MacKay: http://inference.org.uk/mackay/itila/
