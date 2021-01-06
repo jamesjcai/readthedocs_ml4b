@@ -5,14 +5,28 @@
 
 Machine Learning for Biologists
 ===============================
-
+Introduction
+------------
 
 
 .. toctree::
    :maxdepth: 2  
+   :caption: Preface  
+      
+.. toctree::
+   :maxdepth: 2  
+   :caption: Chapter I 
+
+.. toctree::
+   :maxdepth: 2  
+   :caption: Chapter II 
+
+.. toctree::
+   :maxdepth: 2  
+   :caption: Appendix
    
    refs
-
+ 
 
 
 Indices and tables
