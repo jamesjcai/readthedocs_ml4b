@@ -14,7 +14,7 @@ Data-driven discovery is revolutionizing the modeling, prediction, and control o
    :maxdepth: 2  
    :caption: Chapter I 
    
-   chapterone
+   chapter1
    
 .. toctree::
    :maxdepth: 2  
