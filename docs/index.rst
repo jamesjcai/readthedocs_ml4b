@@ -11,6 +11,8 @@ Machine Learning for Biologists
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   refs
 
 
 
