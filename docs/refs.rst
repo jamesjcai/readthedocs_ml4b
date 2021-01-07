@@ -15,3 +15,4 @@ External resources
 - Code/book reproduction of @rlmcelreath awesome Statistical Rethinking - https://bookdown.org/content/3686/ 
 - https://gwthomas.github.io/docs/math4ml.pdf
 - https://ai.stanford.edu/~gwthomas/notes/
+- https://d2l.ai/index.html
