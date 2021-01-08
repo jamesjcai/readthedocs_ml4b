@@ -11,56 +11,56 @@ Data-driven discovery is revolutionizing the modeling, prediction, and control o
 
      
 .. toctree::
-   :maxdepth: 2  
-   :caption: Chapter I Vectors & Matrices
+   :maxdepth: 3  
+   :caption: Vectors & Matrices
    
    chapter1
    
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter II Distributions & Distances
+   :caption: Distributions & Distances
    
    chapter2 
 
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter III Component Analyses
+   :caption: Component Analyses
    
    chapter3
 
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter IV Regression & Regularization
+   :caption: Regression & Regularization
    
    chapter4
 
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter V Optimization
+   :caption: Optimization
    
    chapter5
 
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter VI Clustering
+   :caption: Clustering
    
    chapter6
 
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter VII Classification
+   :caption: Classification
    
    chapter7
 
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter VIII Graph-based Learning
+   :caption: Graph-based Learning
    
    chapter8
 
 .. toctree::
    :maxdepth: 2  
-   :caption: Chapter IX Tensors & Manifolds
+   :caption: Tensors & Manifolds
    
    chapter9
  
