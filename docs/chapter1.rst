@@ -1,7 +1,7 @@
 .. _chapter1:
 
-Vectors & Matrices
-==================
+Vector
+======
 
 Norm
 ----
@@ -17,8 +17,8 @@ Eigenvalues & Eigenvectors
 
 .. _vectors--matrices:
 
-Vectors & Matrices
-==================
+Matrix
+======
 
 https://link.springer.com/chapter/10.1007/978-981-10-6808-9\ `\ \_1`_ -
 
