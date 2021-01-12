@@ -17,3 +17,4 @@ External resources
 - https://ai.stanford.edu/~gwthomas/notes/
 - https://d2l.ai/index.html
 - https://www.amazon.com/dp/3030403432/ - Linear Algebra and Optimization for Machine Learning: A Textbook
+- http://mlwiki.org/index.php/Main_Page
