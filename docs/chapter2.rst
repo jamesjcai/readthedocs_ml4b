@@ -1,7 +1,4 @@
 
-Distributions
-=============
-
 Distances
 =========
 
