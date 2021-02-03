@@ -1,7 +1,7 @@
 .. _chapter1:
 
-Scalars, Vectors, and Matrices
-=============================
+Vectors & Matrices
+==================
 
 The Geometry of Matrix Multiplication
 -------------------------------------
