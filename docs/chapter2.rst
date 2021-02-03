@@ -28,7 +28,8 @@ EDM
 Gram Matrix
 -----------
 https://mathworld.wolfram.com/GramMatrix.html
-
+https://en.wikipedia.org/wiki/Gramian_matrix
+An important application is to compute linear independence: a set of vectors are linearly independent if and only if the Gram determinant (the determinant of the Gram matrix) is non-zero.
 
 Multidimensional Scalling
 -------------------------
