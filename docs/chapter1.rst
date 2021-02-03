@@ -1,7 +1,10 @@
 .. _chapter1:
 
-Vector
-======
+Scalars, Vectors, and Matrices
+=============================
+
+The Geometry of Matrix Multiplication
+-------------------------------------
 
 Norm
 ----
