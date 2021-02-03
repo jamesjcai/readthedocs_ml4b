@@ -20,8 +20,8 @@ Eigenvalues & Eigenvectors
 
 .. _vectors--matrices:
 
-Matrix
-======
+Matrix Multiplication
+---------------------
 
 https://link.springer.com/chapter/10.1007/978-981-10-6808-9\ `\ \_1`_ -
 
