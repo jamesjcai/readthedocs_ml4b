@@ -1,8 +1,4 @@
-.. _chapter1:
-
-######
-Part 1
-######
+.. _chapter_vectors:
 
 ***************
 Chapter: Vector
