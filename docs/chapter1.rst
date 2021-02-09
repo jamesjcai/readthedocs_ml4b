@@ -1,20 +1,38 @@
 .. _chapter1:
 
-Vectors & Matrices
-==================
+######
+Part 1
+######
+
+***************
+Chapter: Vector
+***************
+
+
+What is a vector
+================
 
 https://stattrek.com/matrix-algebra/matrix.aspx
+https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html#headings
+
+***************
+Chapter: Matrix
+***************
 
 What is a Matrix?
------------------
+=================
 This lesson introduces the matrix - the rectangular array at the heart of matrix algebra. Matrix algebra is used quite a bit in advanced statistics, largely because it provides two benefits.
 
 Compact notation for describing sets of data and sets of equations.
 Efficient methods for manipulating sets of data and solving sets of equations.
 
 Matrix Definition
-^^^^^^^^^^^^^^^^^
+-----------------
 A matrix is a rectangular array of numbers arranged in rows and columns. The array of numbers below is an example of a matrix.
+
+.. math::
+
+    n_{\mathrm{offset}} = \sum_{k=0}^{N-1} s_k n_k
 
 The number of rows and columns that a matrix has is called its dimension or its order. By convention, rows are listed first; and columns, second. Thus, we would say that the dimension (or order) of the above matrix is 3 x 4, meaning that it has 3 rows and 4 columns.
 
@@ -25,7 +43,7 @@ Matrix Notation
 Statisticians use symbols to identify matrix elements and matrices.
 
 Types of Matrices
------------------
+=================
 This lesson describes a few of the more important types of matrices: transpose matrices, vectors, and different kinds of square matrices.
 
 Transpose Matrix
