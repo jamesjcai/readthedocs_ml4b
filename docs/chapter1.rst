@@ -3,6 +3,42 @@
 Vectors & Matrices
 ==================
 
+https://stattrek.com/matrix-algebra/matrix.aspx
+
+What is a Matrix?
+-----------------
+This lesson introduces the matrix - the rectangular array at the heart of matrix algebra. Matrix algebra is used quite a bit in advanced statistics, largely because it provides two benefits.
+
+Compact notation for describing sets of data and sets of equations.
+Efficient methods for manipulating sets of data and solving sets of equations.
+
+Matrix Definition
+^^^^^^^^^^^^^^^^^
+A matrix is a rectangular array of numbers arranged in rows and columns. The array of numbers below is an example of a matrix.
+
+The number of rows and columns that a matrix has is called its dimension or its order. By convention, rows are listed first; and columns, second. Thus, we would say that the dimension (or order) of the above matrix is 3 x 4, meaning that it has 3 rows and 4 columns.
+
+Numbers that appear in the rows and columns of a matrix are called elements of the matrix. In the above matrix, the element in the first column of the first row is 21; the element in the second column of the first row is 62; and so on.
+
+Matrix Notation
+^^^^^^^^^^^^^^^
+Statisticians use symbols to identify matrix elements and matrices.
+
+Types of Matrices
+-----------------
+This lesson describes a few of the more important types of matrices: transpose matrices, vectors, and different kinds of square matrices.
+
+Transpose Matrix
+^^^^^^^^^^^^^^^^
+The transpose of one matrix is another matrix that is obtained by using rows from the first matrix as columns in the second matrix.
+
+For example, it is easy to see that the transpose of matrix A is A'. Row 1 of matrix A becomes column 1 of A'; row 2 of A becomes column 2 of A'; and row 3 of A becomes column 3 of A'.
+
+Square Matrices
+^^^^^^^^^^^^^^^
+A square matrix is an n x n matrix; that is, a matrix with the same number of rows as columns. In this section, we describe several special kinds of square matrix.
+
+
 The Geometry of Matrix Multiplication
 -------------------------------------
 
