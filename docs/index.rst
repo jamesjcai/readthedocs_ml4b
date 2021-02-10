@@ -22,7 +22,7 @@ Data-driven discovery is revolutionizing the modeling, prediction, and control o
    chapter6
    chapter7
    chapter8
-   chapter9   
+   chapter_tensors   
  
 .. toctree::
    :maxdepth: 2  
