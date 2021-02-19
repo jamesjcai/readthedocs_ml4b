@@ -1,0 +1,28 @@
+.. _chapter_components:
+
+
+**********
+Components
+**********
+
+
+What is a component
+===================
+
+Components
+Decomposing signals in components (matrix factorization problems)A very general formulation of the problem can be stated as follows: What could be a function from an m dimensional space to an n dimensional space such that the transformed variables give information on the data that is otherwise hidden in the large data set. That is, the transformed variables should be the underlying factors or components that describe the essential structure of the data. It is hoped that thesecomponents correspond to some physical causes that were involved in the process that generated the data in the first place.
+
+Ben Grossmann (https://math.stackexchange.com/users/81360/ben-grossmann), Is there a geometric meaning to the outer product of two vectors?, URL (version: 2020-04-23): https://math.stackexchange.com/q/965657
+
+
+For any vector x,
+
+.. math::
+
+  uv^T(x)=(v\dotx)u
+  
+That is, If u and v are unit vectors, $uv^T(x)$ is the component of x in the v direction, taken into the u direction.
+
+QR decomposition
+----------------
+see find orthognal vectors
