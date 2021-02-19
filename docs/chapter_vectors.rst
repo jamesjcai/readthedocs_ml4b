@@ -28,9 +28,9 @@ If you start with a 2-d vector (x,y), pretend you have the vector (x,y,0) and le
 To get a magnitude of 1, just divide any of those vectors by their magnitude.
 
 
-***************
-Chapter: Matrix
-***************
+********
+Matrices
+********
 
 What is a Matrix?
 =================
