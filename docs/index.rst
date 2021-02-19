@@ -19,8 +19,8 @@ Data-driven discovery is revolutionizing the modeling, prediction, and control o
    chapter_distances
    chapter_probability
    chapter_components
-   chapter_regression
    chapter_optimization
+   chapter_regression
    chapter_clustering
    chapter_classification
    chapter_graph
