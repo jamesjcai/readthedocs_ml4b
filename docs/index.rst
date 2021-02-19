@@ -16,14 +16,16 @@ Data-driven discovery is revolutionizing the modeling, prediction, and control o
   
    chapter_vectors
    chapter_matrices
-   chapter2
-   chapter3
-   chapter4
-   chapter5
-   chapter6
-   chapter7
-   chapter8
-   chapter_tensors   
+   chapter_distances
+   chapter_probability
+   chapter_components
+   chapter_regression
+   chapter_optimization
+   chapter_clustering
+   chapter_classification
+   chapter_graph
+   chapter_manifold
+   chapter_tensors
  
 .. toctree::
    :maxdepth: 2  
