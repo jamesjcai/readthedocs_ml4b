@@ -1,8 +1,8 @@
 .. _chapter_vectors:
 
-***************
-Chapter: Vector
-***************
+*******
+Vectors
+*******
 
 
 What is a vector
