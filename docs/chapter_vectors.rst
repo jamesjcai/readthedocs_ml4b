@@ -8,6 +8,10 @@ Vectors
 What is a vector
 ================
 
+https://www.youtube.com/playlist?list=PLkZjai-2Jcxlg-Z1roB0pUwFU-P58tvOx
+
+
+
 https://stattrek.com/matrix-algebra/matrix.aspx
 https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html#headings
 
@@ -26,6 +30,10 @@ Take another vector (a,b,c) - any vector will do. Now, consider (yc-zb,az-cx,bx-
 If you start with a 2-d vector (x,y), pretend you have the vector (x,y,0) and let (a,b,c)=(0,0,1). This will give some other vector (f,g,0), which means a perpendicular vector is (f,g). This gives a special formula: a vector perpendicular to (x,y) is (y,-x) [or (-y,x)].
 
 To get a magnitude of 1, just divide any of those vectors by their magnitude.
+
+
+https://www.youtube.com/watch?v=FCmH4MqbFGs
+
 
 .. code:: text
 
@@ -54,20 +62,26 @@ To get a magnitude of 1, just divide any of those vectors by their magnitude.
 Inner and outter products
 
 
+It might be most helpful to see this using basic finite-dimensional matrix and vector calculations. I'm not sure how familiar you are with this.
+
+For simplicity, pick two vectors u, v \in \mathbb{R}^n. If we pick the standard basis e_1, \ldots, e_n, then u and v looks like
+
 .. math::
 
-  It might be most helpful to see this using basic finite-dimensional matrix and vector calculations. I'm not sure how familiar you are with this.
-
-  For simplicity, pick two vectors u, v \in \mathbb{R}^n. If we pick the standard basis e_1, \ldots, e_n, then u and v looks like
+   \frac{ \sum_{t=0}^{N}f(t,k) }{N}
   u = u_1 e_1 + \cdots + u_n e_n \\
   v = v_1 e_1 + \cdots + v_n e_n \\
-  (of course you know that u_i, v_i are extractable via the projections \left<u| e_i\right> and \left<v| e_i\right>).
+  
+(of course you know that :math:`u_i`, :math:`v_i` are extractable via the projections :math:`\left<u| e_i\right> and \left<v| e_i\right>`).
 
-  Now,
-  \left<u|v\right> = u \cdot v = u_1 v_1 + \cdots + u_n v_n = \left[\begin{array}{ccc}u_1 & \cdots & u_n\end{array}\right] \cdot \left[\begin{array}{c}v_1 \\ \vdots \\ v_n\end{array}\right]
-  with the last equality coming from the orthonormality of the basis vectors. If we think of u, v as actually being column vectors, then we can write
+Now, :math:`\left<u|v\right> = u \cdot v = u_1 v_1 + \cdots + u_n v_n = \left[\begin{array}{ccc}u_1 & \cdots & u_n\end{array}\right] \cdot \left[\begin{array}{c}v_1 \\ \vdots \\ v_n\end{array}\right]`
+
+with the last equality coming from the orthonormality of the basis vectors. If we think of u, v as actually being column vectors, then we can write
+
+.. math::
   u \cdot v = u^T v
-  since the row vector u^T is the transpose of the column u. The matrix multiplication is of a 1 \times n array with an n \times 1 array, resulting in a 1 \times 1 array, or just a number. In bra-ket notation, transposing the column to the row turns the ket \left|u\right> into the bra \left< u \right|.
+  
+since the row vector :math:`u^T` is the transpose of the column :math:`u`. The matrix multiplication is of a 1 \times n array with an n \times 1 array, resulting in a 1 \times 1 array, or just a number. In bra-ket notation, transposing the column to the row turns the ket \left|u\right> into the bra \left< u \right|.
 
   So much for the inner product. But notice that the matrix multiplication rules still work if we multiply the column by the row, in the opposite order. In that case, we don't get a single number like in the first calculation - in fact, we get an n \times n matrix. We get:
   v u^T = \left[\begin{array}{c}v_1 \\ \vdots \\ v_n\end{array}\right] \cdot \left[\begin{array}{ccc}u_1 & \cdots & u_n\end{array}\right] = \left[\begin{array}{ccc} u_1v_1 & \cdots & u_n v_1 \\ \vdots & & \vdots \\ u_1v_n & \cdots & u_n v_n\end{array}\right] = \left|v\right>\left<u\right|
