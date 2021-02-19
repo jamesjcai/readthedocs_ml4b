@@ -15,6 +15,7 @@ Data-driven discovery is revolutionizing the modeling, prediction, and control o
    :caption: Chapters
   
    chapter_vectors
+   chapter_matrices
    chapter2
    chapter3
    chapter4
