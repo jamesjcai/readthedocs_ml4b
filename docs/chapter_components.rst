@@ -77,4 +77,6 @@ https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
   :width: 300
   :alt: Alternative text
   
+End of the chapter
+  
 
