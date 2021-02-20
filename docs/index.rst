@@ -18,8 +18,8 @@ Data-driven discovery is revolutionizing the modeling, prediction, and control o
    chapter_matrices
    chapter_distances
    chapter_probability
-   chapter_components
    chapter_optimization
+   chapter_components
    chapter_regression
    chapter_clustering
    chapter_classification
