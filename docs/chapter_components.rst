@@ -71,13 +71,18 @@ Principal Component Analysis (PCA) is the corner stone of machine learning metho
 This is a real-data example to show that if we define this vector as :math:`\vec{v}`, then the projection of our data :math:`D` onto this vector is obtained as 
 :math:`\vec{v}^{\intercal} D`, and the variance of the projected data is :math:`\vec{v}^{\intercal} \Sigma \vec{v}`.
 
+|pca|
+
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
 
-.. |Substitution Name| image:: https://raw.githubusercontent.com/jamesjcai/readthedocs_ml4b/main/docs/img/pca_example.png
+|Substitution_Name|
+
+.. |Substitution_Name| image:: https://raw.githubusercontent.com/jamesjcai/readthedocs_ml4b/main/docs/img/pca_example.png
   :width: 300
   :alt: Alternative text
+  :target: https://raw.githubusercontent.com/jamesjcai/readthedocs_ml4b/main/docs/img/pca_example.png
   
-.. |Substitution Name| image:: docs/img/pca_example.png
+.. |pca| image:: img/pca_example.png
   :width: 300
   :alt: Alternative text
   
