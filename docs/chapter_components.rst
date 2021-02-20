@@ -17,11 +17,9 @@ Ben Grossmann (https://math.stackexchange.com/users/81360/ben-grossmann), Is the
 
 For any vector x,
 
-.. math::
-
-  uv^T(x)=(v\dotx)u
+.. math:: uv^T(x)=(v\dotx)u
   
-That is, If u and v are unit vectors, $uv^T(x)$ is the component of x in the v direction, taken into the u direction.
+That is, If :math:`u` and :math:`v` are unit vectors, :math:`uv^T(x)` is the component of :math:`x` in the :math:`v` direction, taken into the :math:`u` direction.
 
 QR decomposition
 ----------------
@@ -70,8 +68,8 @@ Principal Component Analysis (PCA) is the corner stone of machine learning metho
       0.4138
     
     
-This is a real-data example to show that if we define this vector as $\vec{v}$, then the projection of our data D onto this vector is obtained as 
-$\vec{v}^{\intercal} D$, and the variance of the projected data is $\vec{v}^{\intercal} \Sigma \vec{v}$.
+This is a real-data example to show that if we define this vector as :math:`\vec{v}`, then the projection of our data :math:`D` onto this vector is obtained as 
+:math:`\vec{v}^{\intercal} D`, and the variance of the projected data is :math:`\vec{v}^{\intercal} \Sigma \vec{v}`.
 
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
 
