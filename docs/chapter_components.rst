@@ -73,7 +73,11 @@ This is a real-data example to show that if we define this vector as :math:`\vec
 
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
 
-.. |Substitution Name| image:: img/pca_example.png
+.. |Substitution Name| image:: https://raw.githubusercontent.com/jamesjcai/readthedocs_ml4b/main/docs/img/pca_example.png
+  :width: 300
+  :alt: Alternative text
+  
+.. |Substitution Name| image:: docs/img/pca_example.png
   :width: 300
   :alt: Alternative text
   
