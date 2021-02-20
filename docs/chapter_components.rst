@@ -26,3 +26,52 @@ That is, If u and v are unit vectors, $uv^T(x)$ is the component of x in the v d
 QR decomposition
 ----------------
 see find orthognal vectors
+
+
+Principal Component Analysis
+============================
+Principal Component Analysis (PCA) is the corner stone of machine learning methods. 
+
+
+.. code:: text
+
+  >> data
+  data =
+     -2.2588    0.3188   -0.4336
+      0.8622   -1.3077    0.3426
+
+  >> X=data'-mean(data')
+  X =
+     -1.4676    0.8965
+      1.1100   -1.2734
+      0.3576    0.3769
+
+  >> cov(X,1)
+  ans =
+      1.1713   -0.8648
+     -0.8648    0.8558
+
+  >> C=X'*X./3
+  C =
+      1.1713   -0.8648
+     -0.8648    0.8558
+
+  >> e
+  e =
+      0.2813
+      0.9596
+
+  >> e'*C*e
+  ans =
+      0.4138
+
+  >> sum((X*e).^2)/3
+  ans =
+      0.4138
+    
+    
+This is a real-data example to show that if we define this vector as $\vec{v}$, then the projection of our data D onto this vector is obtained as 
+$\vec{v}^{\intercal} D$, and the variance of the projected data is $\vec{v}^{\intercal} \Sigma \vec{v}$.
+
+https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
+
