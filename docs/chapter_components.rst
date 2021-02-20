@@ -15,9 +15,9 @@ Decomposing signals in components (matrix factorization problems)A very general 
 Ben Grossmann (https://math.stackexchange.com/users/81360/ben-grossmann), Is there a geometric meaning to the outer product of two vectors?, URL (version: 2020-04-23): https://math.stackexchange.com/q/965657
 
 
-For any vector x,
+For any vector :math:`x`,
 
-.. math:: uv^T(x)=(v\dotx)u
+.. math:: uv^T(x)=(v \dot x)u
   
 That is, If :math:`u` and :math:`v` are unit vectors, :math:`uv^T(x)` is the component of :math:`x` in the :math:`v` direction, taken into the :math:`u` direction.
 
