@@ -31,7 +31,7 @@ Principal Component Analysis
 Principal Component Analysis (PCA) is the corner stone of machine learning methods. 
 
 
-.. code:: text
+.. code-block:: text
 
   >> data
   data =
