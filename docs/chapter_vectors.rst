@@ -35,7 +35,7 @@ To get a magnitude of 1, just divide any of those vectors by their magnitude.
 https://www.youtube.com/watch?v=FCmH4MqbFGs
 
 
-.. code:: text
+.. code-block:: text
 
   function [a1cmp] = ortc(a1)
   %ORTC Orthogonal complement of column matrix.
