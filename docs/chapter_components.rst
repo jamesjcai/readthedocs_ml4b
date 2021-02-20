@@ -17,7 +17,7 @@ Ben Grossmann (https://math.stackexchange.com/users/81360/ben-grossmann), Is the
 
 For any vector :math:`x`,
 
-.. math:: uv^T(x)=(v \dot x)u
+.. math:: uv^T(x)=(v{\dot}x)u
   
 That is, If :math:`u` and :math:`v` are unit vectors, :math:`uv^T(x)` is the component of :math:`x` in the :math:`v` direction, taken into the :math:`u` direction.
 
