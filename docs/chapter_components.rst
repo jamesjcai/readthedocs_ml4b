@@ -10,7 +10,7 @@ What is a component
 ===================
 
 Components
-Decomposing signals in components (matrix factorization problems)A very general formulation of the problem can be stated as follows: What could be a function from an m dimensional space to an n dimensional space such that the transformed variables give information on the data that is otherwise hidden in the large data set. That is, the transformed variables should be the underlying factors or components that describe the essential structure of the data. It is hoped that thesecomponents correspond to some physical causes that were involved in the process that generated the data in the first place.
+Decomposing signals in components (matrix factorization problems) A very general formulation of the problem can be stated as follows: What could be a function from an m dimensional space to an n dimensional space such that the transformed variables give information on the data that is otherwise hidden in the large data set. That is, the transformed variables should be the underlying factors or components that describe the essential structure of the data. It is hoped that thesecomponents correspond to some physical causes that were involved in the process that generated the data in the first place.
 
 Ben Grossmann (https://math.stackexchange.com/users/81360/ben-grossmann), Is there a geometric meaning to the outer product of two vectors?, URL (version: 2020-04-23): https://math.stackexchange.com/q/965657
 
@@ -75,17 +75,10 @@ This is a real-data example to show that if we define this vector as :math:`\vec
 
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
 
-|Substitution_Name|
 
-.. |Substitution_Name| image:: https://raw.githubusercontent.com/jamesjcai/readthedocs_ml4b/main/docs/img/pca_example.png
-  :width: 300
-  :alt: Alternative text
-  :target: https://raw.githubusercontent.com/jamesjcai/readthedocs_ml4b/main/docs/img/pca_example.png
-  
+
+
 .. |pca| image:: img/pca_example.png
   :width: 300
   :alt: Alternative text
   
-End of the chapter
-  
-
