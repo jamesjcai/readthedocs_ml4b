@@ -31,6 +31,12 @@ Principal Component Analysis
 Principal Component Analysis (PCA) is the corner stone of machine learning methods. 
 
 
+Computing PCs using the covariance method
+-----------------------------------------
+The eigenvalues of the covariance matrix encode the variability of the data in an orthogonal basis that captures as much of the data's variability as possible in the first few basis functions (aka the principle component basis). https://www.mathworks.com/matlabcentral/answers/73298-what-does-eigenvalues-expres-in-the-covariance-matrix 
+
+Proof: direction of the greatest variance is eigenvector - Finding the eigen vector of covariance matrix is a way to maximize the variance.
+
 .. code-block:: text
 
   >> data
@@ -69,11 +75,33 @@ Principal Component Analysis (PCA) is the corner stone of machine learning metho
     
     
 This is a real-data example to show that if we define this vector as :math:`\vec{v}`, then the projection of our data :math:`D` onto this vector is obtained as 
-:math:`\vec{v}^{\intercal} D`, and the variance of the projected data is :math:`\vec{v}^{\intercal} \Sigma \vec{v}`.
+:math:`\vec{v}^{\intercal} D`, and the variance of the projected data is :math:`\vec{v}^{\intercal} \Sigma \vec{v}`. Since we are looking for the vector :math:`\vec{v}` that points into the direction of the largest variance, we should choose its components such that the covariance matrix :math:`\vec{v}^{\intercal} \Sigma \vec{v}` of the projected data is as large as possible. Maximizing any function of the form :math:`\vec{v}^{\intercal} \Sigma \vec{v}` with respect to :math:`\vec{v}`, where :math:`\vec{v}` is a normalized unit vector, can be formulated as a so called Rayleigh Quotient. The maximum of such a Rayleigh Quotient is obtained by setting :math:`\vec{v}` equal to the largest eigenvector of matrix :math:`\Sigma`.
 
 |pca|
 
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
+
+Computing PCs using optimization
+--------------------------------
+
+.. code-block:: text
+
+  load hald
+  X=ingredients;
+  coeff = pca(X);
+
+  X=X-mean(X);
+  [optima]=fminsearch(@i_totlenproj,ones(size(X,2),1),[],X);
+  optima=optima./norm(optima);
+  norm(optima-coeff(:,1))
+
+  function d=i_totlenproj(u,X)
+      d=X*u/norm(u);
+      d=-norm(d-d','fro');
+  end
+  
+  
+
 
 
 
