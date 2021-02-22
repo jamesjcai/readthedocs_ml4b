@@ -17,6 +17,7 @@ https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html#headings
 
 
 How do you calculate a vector perpendicular to another? 
+------------------------------------------------------
 https://www.quora.com/How-do-I-find-a-vector-perpendicular-to-another-vector
 
 In 3D there are many vectors that are perpendicular to a given vector. Just imagine stem of hair brush to be given vector then each hair of the brush is a vector perpendicular to stem-vector. While there are of course infinite vectors perpendicular to any one 3d vector, here is a simple answer to your question. If your vector is (i,j,k) then one possible orthogonal vector is: (j-k, k-i, -i-j)
@@ -59,8 +60,18 @@ https://www.youtube.com/watch?v=FCmH4MqbFGs
   %
   % ----- End of ORTC.M ---- RYC/MGS 7/85 %
 
-Inner and outter products
+https://www.ece.rutgers.edu/~orfanidi/ece525/svd.pdf
 
+There are many ways to construct the orthonormal basis U starting with B. One
+is through the SVD implemented into the function orth. Another is through the QRfactorization, which is equivalent to the Gram-Schmidt orthogonalization process.
+The two alternatives are:
+
+.. code-block:: text
+  U = orth(B); % SVD-based
+  U = qr(B,0); % QR-factorization
+
+Inner and outter products
+-------------------------
 
 It might be most helpful to see this using basic finite-dimensional matrix and vector calculations. I'm not sure how familiar you are with this.
 
