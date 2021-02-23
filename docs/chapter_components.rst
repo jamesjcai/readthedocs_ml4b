@@ -94,6 +94,18 @@ This is a real-data example to show that if we define this vector as :math:`\vec
 
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
 
+Relationship between PCA and SVD
+--------------------------------
+PCA and SVD are closely related approaches and can be both applied to decompose any rectangular matrices. We can look into their relationship by performing SVD on the covariance matrix C:
+
+.. math::
+
+  C = X^TX/(n-1) = V\SigmaU^TU\SigmaV^T/(n-1)
+  = V \cdot \Sigma^{2}/(n-1) \cdot V^T
+  = V \cdot \Sigma^{2}/(n-1) \cdot V^{-1}
+
+https://towardsdatascience.com/pca-and-svd-explained-with-numpy-5d13b0d2a4d8
+
 Computing PCs using optimization
 --------------------------------
 
