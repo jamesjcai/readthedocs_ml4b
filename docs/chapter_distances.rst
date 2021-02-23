@@ -8,6 +8,14 @@ In mathematics, the Euclidean distance between two points in Euclidean space is 
 
 The distance between two objects that are not points is usually defined to be the smallest distance among pairs of points from the two objects. Formulas are known for computing distances between different types of objects, such as the distance from a point to a line. In advanced mathematics, the concept of distance has been generalized to abstract metric spaces, and other distances than Euclidean have been studied. In some applications in statistics and optimization, the square of the Euclidean distance is used instead of the distance itself.
 
+
+Role for cross-referencing equations via their label.  This currently works only within the same document.  Example::
+
+.. math:: e^{i\pi} + 1 = 0
+  :label: euler
+
+Euler's identity, equation :eq:`euler`, was elected one of the most beautiful mathematical formulas.
+
 Cosine Distance
 ---------------
 
