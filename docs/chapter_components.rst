@@ -101,8 +101,8 @@ PCA and SVD are closely related approaches and can be both applied to decompose 
 .. math::
 
     C = \frac{X^T X}{n-1} =  \frac{V \Sigma U^{T} U \Sigma V^{T}}{n-1} \\
-      =  \frac{V \cdot \Sigma^{2} \cdot V^{T}}{n-1} \\
-      = \frac{V \cdot \Sigma^{2} \cdot V^{-1}}{n-1}
+      = V \cdot \frac{\Sigma^{2}}{n-1} \cdot V^{T} \\
+      = V \cdot \frac{\Sigma^{2}}{n-1} \cdot V^{-1} \\
 
 https://towardsdatascience.com/pca-and-svd-explained-with-numpy-5d13b0d2a4d8
 
