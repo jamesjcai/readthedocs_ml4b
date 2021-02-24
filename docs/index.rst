@@ -43,12 +43,11 @@ accompanying the paper can be found at https://github.com/jamesjcai/ml4bio.
    refs
  
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
+..
+   Indices and tables
+   ==================
+   * :ref:`genindex`
+   * :ref:`search`
 
 
 .. |ml4btitled| image:: img/ml4btitled.png
