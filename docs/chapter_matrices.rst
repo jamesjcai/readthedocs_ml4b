@@ -11,6 +11,8 @@ This lesson introduces the matrix - the rectangular array at the heart of matrix
 Compact notation for describing sets of data and sets of equations.
 Efficient methods for manipulating sets of data and solving sets of equations.
 
+In general, the data from single-cell transcriptomics can be described in a :math:`c \times g` expression matrix :math:`A`, where :math:`c` is the number of cells, :math:`g` is the number of genes, and the element :math:`A_{i,j}` indicates the expression of gene :math:`j` in cell :math:`i`. As the human body expresses about 20,000 genes (:math:`g` ≈ 20,000), the cells are embedded in a high-dimensional transcriptional space in which cells are close to each other if they have a similar expression of genes. 
+
 Matrix Definition
 -----------------
 A matrix is a rectangular array of numbers arranged in rows and columns. The array of numbers below is an example of a matrix.
