@@ -95,14 +95,15 @@ with the last equality coming from the orthonormality of the basis vectors. If w
 since the row vector :math:`u^T` is the transpose of the column :math:`u`. The matrix multiplication is of a 1 \times n array with an n \times 1 array, resulting in a 1 \times 1 array, or just a number. In bra-ket notation, transposing the column to the row turns the ket \left|u\right> into the bra \left< u \right|.
 
   So much for the inner product. But notice that the matrix multiplication rules still work if we multiply the column by the row, in the opposite order. In that case, we don't get a single number like in the first calculation - in fact, we get an n \times n matrix. We get:
+
+.. math::
   v u^T = \left[\begin{array}{c}v_1 \\ \vdots \\ v_n\end{array}\right] \cdot \left[\begin{array}{ccc}u_1 & \cdots & u_n\end{array}\right] = \left[\begin{array}{ccc} u_1v_1 & \cdots & u_n v_1 \\ \vdots & & \vdots \\ u_1v_n & \cdots & u_n v_n\end{array}\right] = \left|v\right>\left<u\right|
-  Now this is an operator that can act on other vectors. In fact, if w is any other vector, then notice that when we evaluate this matrix on w, it is actually equal to
-  (\left|v\right>\left<u\right|) \left|w\right> = (vu^T)w = v(u^T w) = (u \cdot w) v
-  where the last equality comes from noticing, like before, that u^Tw is just the inner product of u and w.
+  
+Now this is an operator that can act on other vectors. In fact, if :math:`w` is any other vector, then notice that when we evaluate this matrix on :math:`w`, it is actually equal to :math:`(\left|v\right>\left<u\right|) \left|w\right> = (vu^T)w = v(u^T w) = (u \cdot w) v` where the last equality comes from noticing, like before, that :math:`u^{T}w` is just the inner product of :math:`u` and :math:`w`.
 
-  So here is a way to create an operator from two vectors. It's called their 'outer' product, because it's the opposite of an inner product!
+So here is a way to create an operator from two vectors. It's called their 'outer' product, because it's the opposite of an inner product!
 
-  When you have states in quantum mechanics, the vector space is no longer just \mathbb{R}^n. The vector-and-matrix analogy no longer works because there is no longer a finite basis (in general). But the algebra remains the same. You can think of the bras as being row vectors and the kets as being column vectors. Row times column results in a scalar, 'inner' product (bra-ket), and column times row results in a matrix, 'outer' product (ket-bra).
+When you have states in quantum mechanics, the vector space is no longer just :math:`\mathbb{R}^n`. The vector-and-matrix analogy no longer works because there is no longer a finite basis (in general). But the algebra remains the same. You can think of the bras as being row vectors and the kets as being column vectors. Row times column results in a scalar, 'inner' product (bra-ket), and column times row results in a matrix, 'outer' product (ket-bra).
  
  https://math.stackexchange.com/questions/1328503/trying-to-understand-physical-interpretation-of-outer-product
  
@@ -112,7 +113,9 @@ The inner product creates a scalar and the outer a skew-symmetric matrix. If you
 Contrast with Euclidean inner product  https://en.wikipedia.org/wiki/Outer_product
 If m = n, then one can take the matrix product the other way, yielding a scalar (or 1 × 1 matrix):
 
+.. math::
 {\displaystyle \left\langle \mathbf {u} ,\mathbf {v} \right\rangle =\mathbf {u} ^{\textsf {T}}\mathbf {v} }{\displaystyle \left\langle \mathbf {u} ,\mathbf {v} \right\rangle =\mathbf {u} ^{\textsf {T}}\mathbf {v} }
+
 which is the standard inner product for Euclidean vector spaces,[4] better known as the dot product. The inner product is the trace of the outer product.[6] Unlike the inner product, the outer product is not commutative.
 
 Multiplication of a vector {\displaystyle \mathbf {w} }\mathbf {w}  by the matrix {\displaystyle \mathbf {u} \otimes \mathbf {v} }{\displaystyle \mathbf {u} \otimes \mathbf {v} } can be written in terms of the inner product, using the relation {\displaystyle \left(\mathbf {u} \otimes \mathbf {v} \right)\mathbf {w} =\mathbf {u} \left\langle \mathbf {v} ,\mathbf {w} \right\rangle }{\displaystyle \left(\mathbf {u} \otimes \mathbf {v} \right)\mathbf {w} =\mathbf {u} \left\langle \mathbf {v} ,\mathbf {w} \right\rangle }.
