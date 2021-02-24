@@ -18,7 +18,8 @@ Due to the number of gates and the similarities between them, this chapter is at
 
 In this book, I provide a self-contained, succinct description of machine learning and of the basic algorithms with a focus on implementation. Since Matlab and Julia are now available as a high-performence computer languages, I present results from simulator and actual experiments for smaller input data sets. The code and implementations
 accompanying the paper can be found at https://github.com/jamesjcai/ml4bio.
-     
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Chapters
@@ -43,11 +44,10 @@ accompanying the paper can be found at https://github.com/jamesjcai/ml4bio.
    refs
  
 
-..
-   Indices and tables
-   ==================
-   * :ref:`genindex`
-   * :ref:`search`
+Indices and tables
+==================
+ * :ref:`genindex`
+ * :ref:`search`
 
 
 .. |ml4btitled| image:: img/ml4btitled.png
