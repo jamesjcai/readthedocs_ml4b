@@ -16,6 +16,8 @@ Machine learning methods are taking a central role in modern bioinformatics and 
 
 Due to the number of gates and the similarities between them, this chapter is at risk of becoming a list. To counter this, we have included a few digressions to introduce important ideas at appropriate places throughout the chapter.
 
+In this book, I provide a self-contained, succinct description of machine learning and of the basic algorithms with a focus on implementation. Since Matlab and Julia are now available as a high-performence computer languages, I present results from simulator and actual experiments for smaller input data sets. The code and implementations
+accompanying the paper can be found at https://github.com/jamesjcai/ml4bio.
      
 .. toctree::
    :maxdepth: 2
