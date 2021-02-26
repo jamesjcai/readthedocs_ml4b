@@ -20,3 +20,8 @@ External resources
 - http://mlwiki.org/index.php/Main_Page
 - https://medium.com/towards-artificial-intelligence/basic-linear-algebra-for-deep-learning-and-machine-learning-ml-python-tutorial-444e23db3e9e#60ee
 - https://machinelearningmastery.com/books-on-optimization-for-machine-learning/
+
+Three linear algebra books
+- https://cosmathclub.files.wordpress.com/2014/10/georgi-shilov-linear-algebra4.pdf
+- https://math.byu.edu/~klkuttle/Linearalgebra.pdf
+- https://www.math.brown.edu/streil/papers/LADW/LADW_2017-09-04.pdf
