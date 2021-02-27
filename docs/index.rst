@@ -42,6 +42,7 @@ accompanying the paper can be found at https://github.com/jamesjcai/ml4bio.
    :caption: Appendices
   
    refs
+   tutor2
  
 
 Indices and tables
