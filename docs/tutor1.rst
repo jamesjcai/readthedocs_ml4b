@@ -1,44 +1,23 @@
 Introduction to MATLAB
 ======================
 
-.. container::
+MATrix LABoratory (MATLAB) is developed by `The Mathworks, Inc <http://www.mathworks.com/>`__. It is an interactive, integrated environment for numerical scientific computations and visualization, as well as symbolic computations, and others. MATLAB is known especially for its highly intuitive and interactive programming development and debugging environment which results in a relatively short development cycle compared with traditional compiled languages such as FORTRAN and C.
 
-   MATrix LABoratory (MATLAB) is developed by `The Mathworks,
-   Inc <http://www.mathworks.com/>`__. It is an interactive, integrated
-   environment for numerical scientific computations and visualization,
-   as well as symbolic computations, and others. MATLAB is known
-   especially for its highly intuitive and interactive programming
-   development and debugging environment which results in a relatively
-   short development cycle compared with traditional compiled languages
-   such as FORTRAN and C.
+Getting Started with MATLAB
+---------------------------
 
-.. container::
+-  To start MATLAB in *Windows:* double click the desktop MATLAB icon
+   |image1|
 
-   .. rubric:: Getting Started with MATLAB
-      :name: getting-started-with-matlab
+-  To start MATLAB in *Linux:* enter ``matlab`` at the system prompt of a `X-Forwarding window <http://www.bu.edu/tech/support/research/system-usage/getting-started/x-forwarding/>`__
 
-.. container::
+.. code-block:: text
 
-   -  To start MATLAB in *Windows:* double click the desktop MATLAB icon
-      |image1|
+   scc1% matlab &
 
-   -  To start MATLAB in *Linux:* enter ``matlab`` at the system prompt
-      of a `X-Forwarding
-      window <http://www.bu.edu/tech/support/research/system-usage/getting-started/x-forwarding/>`__
+In either case, a MATLAB command window appears, along with a ``>>`` prompt. Start using MATLAB by entering MATLAB commands at ``>>``. The example below demonstrates the use of a MATLAB utility function called ``version`` to query the current version of MATLAB you are using on this computer. Note that all typed characters to the right of the ``%`` symbol are treated as explanations or documentation for the line. Output, if any, appears after the the command is entered.
 
-      .. code:: code-block
-
-         scc1% matlab &
-
-   In either case, a MATLAB command window appears, along with a ``>>``
-   prompt. Start using MATLAB by entering MATLAB commands at ``>>``. The
-   example below demonstrates the use of a MATLAB utility function
-   called ``version`` to query the current version of MATLAB you are
-   using on this computer. Note that all typed characters to the right
-   of the ``%`` symbol are treated as explanations or documentation for
-   the line. Output, if any, appears after the the command is entered.
-
-   .. code:: code-block
+.. code-block:: text
 
       >> version   % this tells you the running MATLAB version
 
@@ -46,13 +25,9 @@ Introduction to MATLAB
 
              8.1.0.604 (R2013a)
 
-   Throughout this tutorial, we will use this (``%``) inline comment
-   feature to explain the meaning or purposes of the commands. When you
-   are ready to start writing your own code, you may want to take
-   advantage of this to document your own code wherever appropriate to
-   make clear your intentions for future reference.
+Throughout this tutorial, we will use this (``%``) inline comment feature to explain the meaning or purposes of the commands. When you are ready to start writing your own code, you may want to take advantage of this to document your own code wherever appropriate to make clear your intentions for future reference.
 
-.. code:: code-block
+.. code-block:: text
 
    >> help         % lists available packages/toolboxes.
    HELP topics:
@@ -89,16 +64,10 @@ Introduction to MATLAB
 
    >> doc sin     % spawns a new document window with details on sin
 
-
-
-
-
    >> quit        % quits MATLAB (also exit)
 
-.. container::
-
-   .. rubric:: Rules on Variable Names
-      :name: rules-on-variable-names
+Rules on Variable Names
+-----------------------
 
 -  Names are case sensitive, e.g., NAME and Name are 2 distinct names.
 -  Variable names begin with a letter, e.g., A2z or a2z. On the other
@@ -107,8 +76,6 @@ Introduction to MATLAB
    vector_A)
 -  Cannot use reserved characters: % = + . ~ ; : ! ' [ ] ( ) , @ # $ & ^
 -  Names can be up to 63 characters
-
-┬á
 
 .. container::
 
