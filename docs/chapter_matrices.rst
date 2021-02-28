@@ -58,11 +58,12 @@ Eigenvalues & Eigenvectors
 --------------------------
 
 
-
 .. _vectors--matrices:
 
+
 Matrix Multiplication
----------------------
+=====================
+
 https://xaktly.com/MatrixOperations.html
 
 https://link.springer.com/chapter/10.1007/978-981-10-6808-9\ `\ \_1`_ -
@@ -70,17 +71,26 @@ https://link.springer.com/chapter/10.1007/978-981-10-6808-9\ `\ \_1`_ -
 https://julienbeaulieu.gitbook.io/wiki/sciences/math/linear-algebra/operations
 -
 
-In this chapter, you will discover the eigendecomposition, eigenvectors,
-and eigenvalues in linear algebra. After completing this tutorial, you
-will know: What an eigendecomposition is and the role of eigenvectors
-and eigenvalues. How to calculate an eigendecomposition in Python with
-NumPy. How to confirm a vector is an eigenvector and how to reconstruct
-a matrix from eigenvectors and eigenvalues. This tutorial is divided
-into 5 parts; they are: Eigendecomposition of a Matrix, Eigenvectors and
-Eigenvalues, Calculation of Eigendecomposition, Confirm an Eigenvector
-and Eigenvalue, Reconstruct Original Matrix Transpose a vector Find The
-Maximum And MinimumDescribe An ArrayCreate A VectorCreate A Sparse
-Matrix
+Eigenvectors of Matrices
+========================
+
+We have seen that multiplying a vector by a matrix results in a vector:
+
+.. math::
+    M|v\rangle  = |v'\rangle \leftarrow \text{new vector}
+
+If we chose the right vectors and matrices, we can find a case in which this matrix multiplication is the same as doing a multiplication by a scalar:
+
+.. math::
+    M|v\rangle  = \lambda|v\rangle
+    
+(Above, :math:`M` is a matrix, and :math:`\lambda` is a scalar). For a matrix :math:`M`, any vector that has this property is called an `eigenvector` of  
+:math:`M`.
+
+
+In this chapter, you will discover the eigendecomposition, eigenvectors, and eigenvalues in linear algebra. After completing this tutorial, you will know: What an eigendecomposition is and the role of eigenvectors and eigenvalues. How to calculate an eigendecomposition in Python with NumPy. How to confirm a vector is an eigenvector and how to reconstruct a matrix from eigenvectors and eigenvalues. This tutorial is divided into 5 parts; they are: Eigendecomposition of a Matrix, Eigenvectors and
+Eigenvalues, Calculation of Eigendecomposition, Confirm an Eigenvector and Eigenvalue, Reconstruct Original Matrix Transpose a vector Find The
+Maximum And MinimumDescribe An ArrayCreate A VectorCreate A Sparse Matrix 
 
 https://textbooks.math.gatech.edu/ila/overview.html - Most engineering
 problems, no matter how complicated, can be reduced to linear algebra:
@@ -90,11 +100,12 @@ problems, no matter how complicated, can be reduced to linear algebra:
 Scale values in a vector
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-zscore(x)(x-mean(x))/(max(x)-min(x))
+.. code-block:: text
+    zscore(x)(x-mean(x))/(max(x)-min(x))
 
 https://stats.stackexchange.com/questions/281162/scale-a-number-between-a-range\ https://stats.stackexchange.com/questions/178626/how-to-normalize-data-between-1-and-1
 
-.. code:: text
+.. code-block:: text
 
    function dataNormalized=normalizeData(data)
        %Normalize Sample Data
@@ -109,11 +120,8 @@ Mean normalization
 
 https://en.wikipedia.org/wiki/Feature\ `\ \_scaling`_
 
-Normalization rescales the values into a range of [0,1]. This might be
-useful in some cases where all parameters need to have the same positive
-scale. However, the outliers from the data set are
-lost.Xchanged=X−XminXmax−XminStandardization rescales data to have a
-mean (μ) of 0 and standard deviation (σ) of 1 (unit
+Normalization rescales the values into a range of [0,1]. This might be useful in some cases where all parameters need to have the same positive
+scale. However, the outliers from the data set are lost.Xchanged=X−XminXmax−XminStandardization rescales data to have a mean (μ) of 0 and standard deviation (σ) of 1 (unit
 variance).Xchanged=X−μσ
 
 Linear independence
