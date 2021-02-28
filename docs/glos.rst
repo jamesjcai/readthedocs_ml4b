@@ -58,3 +58,6 @@ Odds - probability that an event happens divided by probability that an event do
 Feature weights - determine the importance of a feature in a model.
 
 Linear separability - drawing a line in the plane that separates all the points of one kind on one side of the line, and all the point of the other kind on the other side of the line.
+
+
+https://gitter-lab.github.io/ml-bio-workshop/glossary/index.html
