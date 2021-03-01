@@ -5,7 +5,7 @@
 Components (II)
 ***************
 
-A "component" is a single part of something larger. For instance, an engine is a component of a car and a piston is a component of an engine. An object's "composition" is everything that makes up the object. So, we can say that the engine, pistons, aluminum, steel, and paint are "components" that make up the car's "composition."
+A "component" is a single part of something larger. For instance, an engine is a component of a car and a piston is a component of an engine. An object's "composition" is everything that makes up the object. So, we can say that the engine, pistons, aluminum, steel, and paint are "components" that make up the car's "composition." As nouns the difference between composition and component is that composition is the proportion of different parts to make a whole while component is a smaller, self-contained part of a larger entity often refers to a manufactured object that is part of a larger device. As an adjective component is making up a larger whole; as a component word.
 
 Singular Value Decomposition (SVD)
 ==================================
