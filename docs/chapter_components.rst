@@ -1,9 +1,9 @@
 .. _chapter_components:
 
 
-**********
-Components
-**********
+**************
+Components (I)
+**************
 
 
 What is a component
