@@ -30,6 +30,7 @@ accompanying the paper can be found at https://github.com/jamesjcai/ml4bio.
    chapter_probability
    chapter_optimization
    chapter_components
+   chapter_components2
    chapter_regression
    chapter_clustering
    chapter_classification
