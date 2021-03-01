@@ -18,7 +18,7 @@ Compute: a cluster assignment mapping :math:`C(x_{i}) \in \{1, \ldots, k\}` that
 
 .. math::
   
-  \sum_{i=1}^{n}\left|x_{i}-\mu_{C\left(i_{i}\right)}\right\|^{2}
+  \sum_{i=1}^{n}\left\|x_{i}-\mu_{C\left(i_{i}\right)}\right\|^{2}
   
 where centroid :math:`\mu_{C\left(i_{i}\right)}` is the mean of the points in cluster :math:`C\left(i_{i}\right)`
 
