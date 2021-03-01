@@ -12,9 +12,9 @@ Clustering is grouping a set of objects such that objects in the same group (i.e
 
 Our specific clustering problem:
 
-Given: a set of :math:`n` observations :math:`\{x_1, x_2,\ldots, x_𝑛\}`, where each observation is a d-dimensional real vector
+Given: a set of :math:`n` observations :math:`\{x_{1}, x_{2},\ldots, x_{n}\}`, where each observation is a d-dimensional real vector
 Given: a number of clusters :math:`k`
-Compute: a cluster assignment mapping :math:`C(x_i) \in \{1, \ldots, k\}` that minimizes the *within cluster sum of squares (WCSS)*:
+Compute: a cluster assignment mapping :math:`C(x_{i}) \in \{1, \ldots, k\}` that minimizes the *within cluster sum of squares (WCSS)*:
 
 .. math::
   
