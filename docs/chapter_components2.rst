@@ -5,6 +5,7 @@
 Components (II)
 ***************
 
+A "component" is a single part of something larger. For instance, an engine is a component of a car and a piston is a component of an engine. An object's "composition" is everything that makes up the object. So, we can say that the engine, pistons, aluminum, steel, and paint are "components" that make up the car's "composition."
 
 Singular Value Decomposition (SVD)
 ==================================
