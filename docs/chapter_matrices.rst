@@ -43,6 +43,21 @@ Square Matrices
 ^^^^^^^^^^^^^^^
 A square matrix is an n x n matrix; that is, a matrix with the same number of rows as columns. In this section, we describe several special kinds of square matrix.
 
+Advanced matrix concepts
+------------------------
+https://docs.microsoft.com/en-us/azure/quantum/concepts-advanced-matrices
+
+Eigenvalues and eigenvectors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Matrix exponentials
+^^^^^^^^^^^^^^^^^^^
+A matrix exponential can also be defined in exact analogy to the exponential function. The matrix exponential of a matrix :math:`A` can be expressed as
+
+
+https://docs.microsoft.com/en-us/azure/quantum/concepts-vectors-and-matrices
+
 
 The Geometry of Matrix Multiplication
 -------------------------------------
