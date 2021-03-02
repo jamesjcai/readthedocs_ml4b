@@ -51,7 +51,7 @@ k^1000 is exceptionally huge unless k is smaller than something like 1.1. Like, 
    chapter_probability
    chapter_optimization
    chapter_components
-   chapter_components2
+   chapter_decomposition
    chapter_regression
    chapter_clustering
    chapter_classification
