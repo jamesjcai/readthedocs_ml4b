@@ -86,9 +86,13 @@ A weight can be any real-valued number. For example, we may give these weights t
 .. math:: 
   w_1=50, w_2=-2, w_3=7, w_4=24, w_5=-10
 
+
+Gradient Descent
+----------------
+
+
+
 .. |optimization1| image:: https://docs.microsoft.com/en-us/azure/quantum/media/plot_simple.png
-
 .. |optimization2| image:: https://docs.microsoft.com/en-us/azure/quantum/media/plot_rugged.png
-
 .. |optimization3| image:: https://docs.microsoft.com/en-us/azure/quantum/media/plot_random.png
 
