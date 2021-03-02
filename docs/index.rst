@@ -20,6 +20,27 @@ In this book, I provide a self-contained, succinct description of machine learni
 accompanying the paper can be found at https://github.com/jamesjcai/ml4bio.
 
 
+What is intelligence?
+---------------------
+Intelligence has been defined in many ways: the capacity for logic, understanding, self-awareness, learning, emotional knowledge, reasoning, planning, creativity, critical thinking, and problem-solving. More generally, it can be described as the ability to perceive or infer information, and to retain it as knowledge to be applied towards adaptive behaviors within an environment or context. https://en.wikipedia.org/wiki/Intelligence
+
+Chimpanzee test: This is a test of working memory, made famous by a study that found that chimpanzees consistently outperform humans on this task. In the study, the chimps consistently outperformed humans, and some chimps were able to remember 9 digits over 90% of the time.
+
+https://www.youtube.com/watch?v=zsXP8qeFF6A
+
+Exponential is worse than polynomial
+------------------------------------
+If you ask a biologist if he or she can write the exponential equation, he or she might find it difficult although many of them may use the concept of exponential growth in their daily working life. They may find it troubling to write as :math:`f(x)=c^x` or :math:`f(x)=x^c`, where :math:`c` is a constant. O(n^2) falls into the quadratic category, which is a type of polynomial (the special case of the exponent being equal to 2) and better than exponential. Exponential is much worse than polynomial. Look at how the functions grow.
+
+.. code-block:: text
+
+   n    = 10    |     100   |      1000
+   n^2  = 100   |   10000   |   1000000 
+   k^n  = k^10  |   k^100   |    k^1000
+
+k^1000 is exceptionally huge unless k is smaller than something like 1.1. Like, something like every particle in the universe would have to do 100 billion billion billion operations per second for trillions of billions of billions of years to get that done.
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Chapters
