@@ -6,6 +6,11 @@ Decomposition
 
 A "component" is a single part of something larger. For instance, an engine is a component of a car and a piston is a component of an engine. An object's "composition" is everything that makes up the object. So, we can say that the engine, pistons, aluminum, steel, and paint are "components" that make up the car's "composition." As nouns the difference between composition and component is that composition is the proportion of different parts to make a whole while component is a smaller, self-contained part of a larger entity often refers to a manufactured object that is part of a larger device. As an adjective component is making up a larger whole; as a component word.
 
+Eigendecomposition
+==================
+In linear algebra, eigendecomposition or sometimes spectral decomposition is the factorization of a matrix into a canonical form, whereby the matrix is represented in terms of its eigenvalues and eigenvectors.
+
+
 Singular Value Decomposition (SVD)
 ==================================
 
@@ -33,5 +38,26 @@ okay so you think about the following a transpose a one thing to think about if 
   \end{aligned}
 
 so if I can find the eigenvalues they're going to be equivalent to Sigma J Squared's and the eigenvectors are v that's how I get V how about I get you if you get you the following way a times a transpose well a times a transpose is U Sigma V Star times u Sigma V star transpose which is u Sigma V star remember the transpose here flips you order and transpose is so that gives you a V Sigma u star P star times V is one you get u Sigma squared U star multiplying out both sides by you if you multiply both sides by you what you end up getting the following that's one so you get a a transpose U is equal to u Sigma squared I can value problem same eigen values as here so the singular matrix Sigma is the same for both but notice when you solve this eigenvalue problem of a a transpose versus h kram chose a what you end up getting are the eigenvectors are the eigenvectors give you the matrix u this eigenvalue problem this is how you get you write you solve for always all the eigen values one other thing to note is that you always know you can solve this because by doing a a transpose what you've effectively done by doing this is this matrix here now becomes what's called self adjoint or hermitian which guarantees that in fact the eigenvalues are real and positive and distinct which you already known to be the case for these ok so you get the eigen vectors you heigen vectors of this eigenvalue pump gives you u you can also get your eigen values which gives you your singular values and from this one over here you can get onion vectors of V okay so that's how you would compute this U and V to begin with now so far all we've talked about this is essentially this decomposition says what I can do is a matrix a what do I know what to do I know that what it does is it rotates and stretches and in particular we come back over here real quick to finish off the matrix you want to acts on a vector it rotates stretches rotates okay this is from the simple example I gave at the beginning of class you know that's all it does rotates and stretches so here's a formula for doing it you're always guaranteed to do this but what you can do with this thing is magic so what we're going to learn in the next couple of lectures is what this thing can do for you in terms of solving data analysis problems and that will be the topic for the follow-up lectures on a single single value decomposition Up next 
+
+Non-negative matrix factorization (NMF)
+=======================================
+https://www.quora.com/What-is-Maximum-Margin-Matrix-Factorization
+
+In matrix factorization , you try to approximate  X^∈Rn×m  of a matrix  X \in \mathbb{R}{n \times m}^  i.e
+X^≈X=UVT  where  U∈Rk×m  and  VT∈Rk×m . This approximation is done by minimizing an error criteria which for example could be the Frobenius difference between the original matrix and approximate one.
+
+Srebro [1] propose a low trace norm constraint instead of constraining the rank of the matrix. In contrast to use Frobenius norm in low-rank settings, they propose the Hinge loss (The authors work with discrete values). The objective function turns to be
+
+X^=λ||X^||sigma+∑i,j∈XLh(X,X^) 
+
+where  λ>0  is a parameter for approximation between regularization error and regularization term. By following [1] Srebro shows the objective function can be changed to
+
+X^=λ2(||U||2F+||V||2F)+∑i,jh(X,uivTj) .
+
+Solving the above equation by Gradient Descent is still hard so what you do is you change the loss function to the smooth hinge loss making the objective function differentiable [2].
+
+[1]Maximum margin matrix factorization N. Srebro, J. D. M. Rennie, and T. Jaakkola.
+[2]Fast Maximum Margin Matrix Factorizationfor Collaborative Prediction Jason Rennie and Nathan Srebro
+
 
 
