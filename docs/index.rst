@@ -24,6 +24,8 @@ What is intelligence?
 ---------------------
 Intelligence has been defined in many ways: the capacity for logic, understanding, self-awareness, learning, emotional knowledge, reasoning, planning, creativity, critical thinking, and problem-solving. More generally, it can be described as the ability to perceive or infer information, and to retain it as knowledge to be applied towards adaptive behaviors within an environment or context. https://en.wikipedia.org/wiki/Intelligence
 
+|chimptest|
+
 Chimpanzee test: This is a test of working memory, made famous by a study that found that chimpanzees consistently outperform humans on this task. In the study, the chimps consistently outperformed humans, and some chimps were able to remember 9 digits over 90% of the time.
 
 https://www.youtube.com/watch?v=zsXP8qeFF6A
@@ -78,4 +80,5 @@ Indices and tables
 .. |ml4btitled| image:: img/ml4btitled.png
   :width: 300
   :alt: ML4B
-  
+
+.. |chimptest| image:: img/th.png
