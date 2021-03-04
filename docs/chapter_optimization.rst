@@ -4,6 +4,31 @@ Optimization
 
 All of machine learning revolves around optimization. This includes regression and model selection frameworks that aim to provide parsimonious and interpretable models for data. Curve fitting is the most basic of regression techniques, with polynomial and exponential fitting resulting in solutions that come from solving linear systems of equations. This can be generalized for fitting of nonlinear systems. Importantly, regression are typically applied to under- or over-determined systems, thus requiring cross-validation strategies to evaluate the results.
 
+PCA as an optimization problem
+------------------------------
+
+.. code-block:: matlab
+
+  load hald
+  X=ingredients;
+  coeff = pca(X);
+
+  X=X-mean(X);
+  [optima]=fminsearch(@i_totlenproj,ones(size(X,2),1),[],X);
+  optima=optima./norm(optima);
+  norm(optima-coeff(:,1))
+
+To run this code we need to define a helper function `i_totlenproj`:
+
+.. code-block:: matlab
+
+  function d=i_totlenproj(u,X)
+      d=X*u/norm(u);
+      d=-norm(d-d','fro');
+  end
+
+`i_totlenproj` is a cost function or object function. The object of our optimization procedure is to find values in variable `u` so that the return value of the cost function, `d`, reaches its minimal.
+
 https://docs.microsoft.com/en-us/azure/quantum/optimization-overview-key-concepts
 
 To understand optimization problems, you first need to learn some basic terms and concepts.
