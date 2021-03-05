@@ -19,6 +19,11 @@ Euler's identity, equation :eq:`euler`, was elected one of the most beautiful ma
 Cosine Distance
 ---------------
 
+.. raw:: html
+
+    <object data="https://www.intmath.com/trigonometric-functions/svg/svgphp-sin-cos-tan-csc-sec-cot-2-s0.svg" type="image/svg+xml"></object>
+
+https://www.intmath.com/trigonometric-functions/2-sin-cos-tan-csc-sec-cot.php
 
 Relation between Euclidean Distance and Cosine Distance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
