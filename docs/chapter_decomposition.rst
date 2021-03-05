@@ -43,6 +43,8 @@ Non-negative matrix factorization (NMF)
 =======================================
 https://www.quora.com/What-is-Maximum-Margin-Matrix-Factorization
 
+Lee DDSeung HS (1999) Learning the parts of objects by non-negative matrix factorization Nature 401:788–791.https://doi.org/10.1038/44565 https://pubmed.ncbi.nlm.nih.gov/10548103/
+
 In matrix factorization , you try to approximate  X^∈Rn×m  of a matrix  X \in \mathbb{R}{n \times m}^  i.e
 X^≈X=UVT  where  U∈Rk×m  and  VT∈Rk×m . This approximation is done by minimizing an error criteria which for example could be the Frobenius difference between the original matrix and approximate one.
 
