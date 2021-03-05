@@ -1,12 +1,12 @@
 .. _chapter_vectors:
 
-*******
+
 Vectors
-*******
+=======
 
 
 What is a vector
-================
+----------------
 
 https://www.youtube.com/playlist?list=PLkZjai-2Jcxlg-Z1roB0pUwFU-P58tvOx
 
@@ -122,5 +122,16 @@ Multiplication of a vector {\displaystyle \mathbf {w} }\mathbf {w}  by the matri
 
  
  
- http://geocalc.clas.asu.edu/GA_Primer/GA_Primer/introduction-to-geometric/defining-and-interpreting.html
+http://geocalc.clas.asu.edu/GA_Primer/GA_Primer/introduction-to-geometric/defining-and-interpreting.html
+ 
+.. raw:: html
+
+    <a href="https://www.google.com/">
+        <img src="https://www.intmath.com/trigonometric-functions/svg/svgphp-sin-cos-tan-csc-sec-cot-2-s0.svg" alt="No message"/></a>
+
+https://www.intmath.com/trigonometric-functions/2-sin-cos-tan-csc-sec-cot.php
+
+
+ 
+ 
  
