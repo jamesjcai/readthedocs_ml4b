@@ -105,7 +105,9 @@ To determine the ingredients for each sandwich you need to make in matrix :math:
 
 You will make 4 Sandwich 1 sandwiches, each of which uses 2 slices of bread; 5 
 Sandwich 2 sandwiches, each of which uses 2 slices of bread; and 3 Sandwich 3 sandwiches, each of which uses 2 slices of bread. The total number of slices of bread you will use is expressed by the sum of the products 
+
 .. math::
+
     4(2) + 5(2) + 3(2) = 24, 
     
 so you need 24 slices of bread. 
@@ -116,46 +118,54 @@ Your roommate will make 3 Sandwich 1 sandwiches, each of which uses 2 slices
 of bread; 3 Sandwich 2 sandwiches, each of which uses 2 slices of bread; and 3 
 Sandwich 3 sandwiches, each of which uses 2 slices of bread The total number of 
 slices of bread your roommate will use is exp,ressed by the sum of the products 
-.. math::
-3(2) + 3(2) + 6(2) = 24, 
 
-so your roommate also needs 24 slices of bread 
+.. math::
+
+    3(2) + 3(2) + 6(2) = 24, 
+
+so your roommate also needs 24 slices of bread.
 
 - (c) How much peanut butter will you use? 
 
 The amount of peanut butter you will use is 
+
 .. math::
     4(4) + 5(0) + 3(0) = 16. 
 
-You will use 16 ounces of peanut butter. 
+You will use 16 ounces of peanut butter.
 
 - (d) How much jelly will you use? 
 
 .. math::
-    4(4) + 5(0) + 3(0) = 16. You will use 16 ounces ofjelly
+    4(4) + 5(0) + 3(0) = 16. \: You will use 16 ounces ofjelly
 
-- (e) How much ham will you use? 
+- (e) How much ham will you use?
+
 .. math::
-    4(0) + 5(3) + 3(0) = 15 slices of ham
+    4(0) + 5(3) + 3(0) = 15 \, slices of ham
 
 - (f) How much cheese? 
-.. math::
 
-    4(0) + 5(2) + 3(4) = 22 slices of cheese.
-
-- (g) How much tomato? 
 .. math::
-    4(0) + 5(0) + 3(2) = 6 slices of tomato. 
+    4(0) + 5(2) + 3(4) = 22 \, slices of cheese.
+
+- (g) How much tomato?
+
+.. math::
+    4(0) + 5(0) + 3(2) = 6 \, slices of tomato. 
 
 Similarly, your roommate will use (in addition to the 24 slices of bread) 
 
 .. math::
-
-    3(4) + 3(0) + 6(0) = 12 ounces of peanut butter, 
-    3(4) + 3(0) + 6(0) = 12 ounces of jelly, 
-    3(0) + 3(3) + 6(0) = 9 slices of ham, 
-    3(0) + 3(2) + 6( 4) = 30 slices of cheese, and 
+\[
+\begin{array}{c}
+    3(4) + 3(0) + 6(0) = 12 ounces of peanut butter, \\
+    3(4) + 3(0) + 6(0) = 12 ounces of jelly, \\
+    3(0) + 3(3) + 6(0) = 9 slices of ham, \\
+    3(0) + 3(2) + 6( 4) = 30 slices of cheese, and \\
     3(0) + 3(0) + 6(2) = 12 slices of tomato. 
+\end{array}
+\]
 
 We can summarize the amount of each ingredient with the following matrix C, in which the entries are the numbers of ounces or slices of food. 
 
