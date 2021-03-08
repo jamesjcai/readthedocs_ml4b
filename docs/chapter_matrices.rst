@@ -89,23 +89,23 @@ Suppose you and your roomate go into partnership making sandwiches to sell in yo
 - Sandwich 2: made of bread, ham, and cheese 
 - Sandwich 3: made of bread, cheese, and tomato 
 
-Each night, you (::math::`y`) and your roommate (::math::`r`) plan to sell a number of sandwiches of each kind shown in matrix ::math::`A`.
+Each night, you (:math:`y`) and your roommate (:math:`r`) plan to sell a number of sandwiches of each kind shown in matrix :math:`A`.
 
 .. math:: 
     A
     
-Each sandwich is made by putting together some combination of slices of bread, peanut butter, jelly, ham, cheese, and tomato. Matrix ::math::`B` describes the number of pieces of bread (::math::`b`), ounces of peanut butter (::math::`p`), ounces of jelly (::math::`j`), slices of ham (::math::`h`), slices of cheese (::math::`c`), and slices of tomato (::math::`t`) needed for each kind of sandwich. 
+Each sandwich is made by putting together some combination of slices of bread, peanut butter, jelly, ham, cheese, and tomato. Matrix :math:`B` describes the number of pieces of bread (:math:`b`), ounces of peanut butter (:math:`p`), ounces of jelly (:math:`j`), slices of ham (:math:`h`), slices of cheese (:math:`c`), and slices of tomato (:math:`t`) needed for each kind of sandwich. 
 
 .. math:: 
     B
     
-To determine the ingredients for each sandwich you need to make in matrix ::math::`A`, we will examine the following questions. 
+To determine the ingredients for each sandwich you need to make in matrix :math:`A`, we will examine the following questions. 
 
 - (a) How many slices of bread will you use to make the sandwiches?
 
 You will make 4 Sandwich 1 sandwiches, each of which uses 2 slices of bread; 5 
 Sandwich 2 sandwiches, each of which uses 2 slices of bread; and 3 Sandwich 3 sandwiches, each of which uses 2 slices of bread. The total number of slices of bread you will use is expressed by the sum of the products 
-.. Math::
+.. math::
     4(2) + 5(2) + 3(2) = 24, 
     
 so you need 24 slices of bread. 
@@ -116,7 +116,7 @@ Your roommate will make 3 Sandwich 1 sandwiches, each of which uses 2 slices
 of bread; 3 Sandwich 2 sandwiches, each of which uses 2 slices of bread; and 3 
 Sandwich 3 sandwiches, each of which uses 2 slices of bread The total number of 
 slices of bread your roommate will use is exp,ressed by the sum of the products 
-.. Math::
+.. math::
 3(2) + 3(2) + 6(2) = 24, 
 
 so your roommate also needs 24 slices of bread 
@@ -124,32 +124,32 @@ so your roommate also needs 24 slices of bread
 - (c) How much peanut butter will you use? 
 
 The amount of peanut butter you will use is 
-.. Math::
+.. math::
     4(4) + 5(0) + 3(0) = 16. 
 
 You will use 16 ounces of peanut butter. 
 
 - (d) How much jelly will you use? 
 
-.. Math::
+.. math::
     4(4) + 5(0) + 3(0) = 16. You will use 16 ounces ofjelly
 
 - (e) How much ham will you use? 
-.. Math::
+.. math::
     4(0) + 5(3) + 3(0) = 15 slices of ham
 
 - (f) How much cheese? 
-.. Math::
+.. math::
 
     4(0) + 5(2) + 3(4) = 22 slices of cheese.
 
 - (g) How much tomato? 
-.. Math::
+.. math::
     4(0) + 5(0) + 3(2) = 6 slices of tomato. 
 
 Similarly, your roommate will use (in addition to the 24 slices of bread) 
 
-.. Math::
+.. math::
 
     3(4) + 3(0) + 6(0) = 12 ounces of peanut butter, 
     3(4) + 3(0) + 6(0) = 12 ounces of jelly, 
@@ -159,38 +159,38 @@ Similarly, your roommate will use (in addition to the 24 slices of bread)
 
 We can summarize the amount of each ingredient with the following matrix C, in which the entries are the numbers of ounces or slices of food. 
 
-.. Math::
+.. math::
 
     A
     
 Observe that the entiy in the first row and first column of C is obtained by lining up the first row of A and the first column of B, then multiplying the coITesponding entries and adding the products together. Row 1 of A and column 1 of B are
 
-.. Math::
+.. math::
 
     B
 
 Multiplying pairwise term by te1m gives 
-.. Math::
+.. math::
     4(2) + 5(2) + 3(2) = 24; 
     
-this sum is entiy ::math::`C_11`. Likewise C2s is obtained by multiplying pairwise term by term the second row of A by the fifth column of B, as shown below. 
+this sum is entiy :math:`C_11`. Likewise C2s is obtained by multiplying pairwise term by term the second row of A by the fifth column of B, as shown below. 
 
-.. Math::
+.. math::
     B 
 
 What row of A multiplied by what column of B gives entry C12? The entry in the row and second column ofC is found by multiplying the first row of A by the second column of B. 
 
-.. Math::
+.. math::
     B 
 
 All of the entries in C can be found using the method illustrated above. This way of combining entries in two matrices to yield a third matrix is called matrix multiplication; matrix C is defined as the product of matrices A and B. The operation can be written in the fo1m shown below. 
 
-.. Math::
+.. math::
     C=A*B 
     
 In general, the matrix multiplication C =AB is defined as follows: Each entry Cij is obtained by multiplying pairwise te1m by term the ith row of the left-hand matrix A by thejth column of the right-hand matrix B. In symbols, this definition means that 
 
-.. Math::
+.. math::
     C_{ij} = A_{i1}B_{1j} +  A_{i2}B_{2j} + A_{i3}B_{3j} + \cdots + A_{in}B_{nj}.
 
 
