@@ -157,15 +157,14 @@ You will use 16 ounces of peanut butter.
 Similarly, your roommate will use (in addition to the 24 slices of bread) 
 
 .. math::
-\[
-\begin{array}{c}
-    3(4) + 3(0) + 6(0) = 12 ounces of peanut butter, \\
-    3(4) + 3(0) + 6(0) = 12 ounces of jelly, \\
-    3(0) + 3(3) + 6(0) = 9 slices of ham, \\
-    3(0) + 3(2) + 6( 4) = 30 slices of cheese, and \\
-    3(0) + 3(0) + 6(2) = 12 slices of tomato. 
-\end{array}
-\]
+    \begin{align*}
+        3(4) + 3(0) + 6(0) = 12 ounces of peanut butter, \\
+        3(4) + 3(0) + 6(0) = 12 ounces of jelly, \\
+        3(0) + 3(3) + 6(0) = 9 slices of ham, \\
+        3(0) + 3(2) + 6( 4) = 30 slices of cheese, and \\
+        3(0) + 3(0) + 6(2) = 12 slices of tomato. 
+    \end{align*}
+
 
 We can summarize the amount of each ingredient with the following matrix C, in which the entries are the numbers of ounces or slices of food. 
 
