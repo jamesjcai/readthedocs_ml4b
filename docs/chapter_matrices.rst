@@ -166,11 +166,7 @@ Similarly, your roommate will use (in addition to the 24 slices of bread)
 We can summarize the amount of each ingredient with the following matrix C, in which the entries are the numbers of ounces or slices of food. 
 
 .. math::
-        $\left.C=\begin{array}{ccccccc}
-    x & b & p & j & h & c & t \\
-    y & 1 & 16 & 16 & 15 & 22 & 6 \\
-    r & 24 & 12 & 12 & 9 & 30 & 12
-    \end{array}\right)$
+    A
 
     
 Observe that the entiy in the first row and first column of C is obtained by lining up the first row of A and the first column of :math:`B`, then multiplying the coITesponding entries and adding the products together. Row 1 of :math:`A` and column 1 of :math:`B` are
