@@ -166,10 +166,10 @@ Similarly, your roommate will use (in addition to the 24 slices of bread)
 We can summarize the amount of each ingredient with the following matrix C, in which the entries are the numbers of ounces or slices of food. 
 
 .. math::
-    $\left.C=\begin{array}{cccccc}
-    b & p & j & h & c & t \\
+        $\left.C=\begin{array}{ccccccc}
+    x & b & p & j & h & c & t \\
     y & 1 & 16 & 16 & 15 & 22 & 6 \\
-    24 & 12 & 12 & 9 & 30 & 12
+    r & 24 & 12 & 12 & 9 & 30 & 12
     \end{array}\right)$
 
     
