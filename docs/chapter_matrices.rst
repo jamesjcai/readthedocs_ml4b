@@ -120,7 +120,6 @@ Sandwich 3 sandwiches, each of which uses 2 slices of bread The total number of
 slices of bread your roommate will use is exp,ressed by the sum of the products 
 
 .. math::
-
     3(2) + 3(2) + 6(2) = 24, 
 
 so your roommate also needs 24 slices of bread.
@@ -167,20 +166,24 @@ Similarly, your roommate will use (in addition to the 24 slices of bread)
 We can summarize the amount of each ingredient with the following matrix C, in which the entries are the numbers of ounces or slices of food. 
 
 .. math::
+    \left.C=\begin{array}{cccccc}
+    b & p & j & h & c & t \\
+    y & 1 & 16 & 16 & 15 & 22 & 6 \\
+    24 & 12 & 12 & 9 & 30 & 12
+    \end{array}\right)
 
-    A
     
-Observe that the entiy in the first row and first column of C is obtained by lining up the first row of A and the first column of B, then multiplying the coITesponding entries and adding the products together. Row 1 of A and column 1 of B are
+Observe that the entiy in the first row and first column of C is obtained by lining up the first row of A and the first column of :math:`B`, then multiplying the coITesponding entries and adding the products together. Row 1 of :math:`A` and column 1 of :math:`B` are
 
 .. math::
-
     B
 
-Multiplying pairwise term by te1m gives 
+Multiplying pairwise term by term gives
+
 .. math::
     4(2) + 5(2) + 3(2) = 24; 
     
-this sum is entiy :math:`C_11`. Likewise C2s is obtained by multiplying pairwise term by term the second row of A by the fifth column of B, as shown below. 
+this sum is entiy :math:`C_{11}`. Likewise C2s is obtained by multiplying pairwise term by term the second row of :math:`A` by the fifth column of :math:`B`, as shown below. 
 
 .. math::
     B 
@@ -195,7 +198,7 @@ All of the entries in C can be found using the method illustrated above. This wa
 .. math::
     C=A*B 
     
-In general, the matrix multiplication C =AB is defined as follows: Each entry Cij is obtained by multiplying pairwise te1m by term the ith row of the left-hand matrix A by thejth column of the right-hand matrix B. In symbols, this definition means that 
+In general, the matrix multiplication :math:`C=AB` is defined as follows: Each entry :math:`C_{ij}` is obtained by multiplying pairwise te1m by term the ith row of the left-hand matrix :math:`A` by thejth column of the right-hand matrix :math:`B`. In symbols, this definition means that 
 
 .. math::
     C_{ij} = A_{i1}B_{1j} +  A_{i2}B_{2j} + A_{i3}B_{3j} + \cdots + A_{in}B_{nj}.
