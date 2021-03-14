@@ -207,6 +207,12 @@ https://link.springer.com/chapter/10.1007/978-981-10-6808-9\ `\ \_1`_ -
 https://julienbeaulieu.gitbook.io/wiki/sciences/math/linear-algebra/operations
 -
 
+Matrices as Transformations
+===========================
+https://youtu.be/evGm6IJKrDI?t=1217
+
+
+
 Eigenvectors of Matrices
 ========================
 
