@@ -263,7 +263,7 @@ Therefore the cost function is:
       g=[D_m D_c];
     end
 
-
+Ref https://towardsdatascience.com/linear-regression-simplified-ordinary-least-square-vs-gradient-descent-48145de2cf76
 
 
 .. |optimization1| image:: https://docs.microsoft.com/en-us/azure/quantum/media/plot_simple.png
