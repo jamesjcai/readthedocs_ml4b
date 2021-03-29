@@ -136,20 +136,22 @@ With this informaiton, we can define the gradient of the objective:
     g = [2*x(1)+x(2) x(1)+6*x(2)];
   end
   
-Here is the code of `grad_descent` by James T. Allison.
+Here is the code of the gradient descent algorithm implemented by James T. Allison.
 
 .. code-block:: matlab
   
-  function [xopt,fopt,niter,gnorm,dx] = grad_descent(varargin)
-    tol = 1e-6; % termination tolerance
-    maxiter = 1000; % maximum number of allowed iterations
-    dxmin = 1e-6; % minimum allowed perturbation
-    alpha = 0.1;  % step size ( 0.33 causes instability, 0.2 quite accurate)
-    gnorm = inf; x = x0; niter = 0; dx = inf; % initialize gradient norm, optimization vector, iteration counter, perturbation
+  function [xopt,fopt] = grad_descent
+  
+    alpha = 0.1;  % step size (0.33 causes instability, 0.2 quite accurate)
+    gnorm = inf;  % gradient norm
+    x = x0;       % optimization vector
+    niter = 0;    % iteration counter
+    dx = inf;     % perturbation
+    
     f = @(x1,x2) x1.^2 + x1.*x2 + 3*x2.^2;  % define the objective function:
-    f2 = @(x) f(x(1),x(2)); % redefine objective function syntax for use with optimization:
-    % gradient descent algorithm:
-    while and(gnorm>=tol, and(niter <= maxiter, dx >= dxmin))    
+    f2 = @(x) f(x(1),x(2)); % redefine objective function syntax for use with optimization
+
+    while and(gnorm>=1e-6, and(niter <= 1000, dx >= 1e-6))    
         g = grad(x);  % calculate gradient:
         gnorm = norm(g);    
         xnew = x - alpha*g;  % take step:
@@ -163,9 +165,9 @@ Here is the code of `grad_descent` by James T. Allison.
         dx = norm(xnew-x);
         x = xnew;    
     end
+    
     xopt=x;
     fopt=f2(xopt);
-    niter=niter-1;
   end
 
 The same results should be obtained using fminsearch
@@ -199,21 +201,21 @@ Therefore, the objective function is defined as the follows:
 
 .. code-block:: matlab
 
-    function g = grad(x)
-      g = [16*x(1)*(x(1).^2 + x(2) - x(3) 
-           8*x(1).^2 + 8*x(2) - 8*x(3)
-           -8*x(1).^2 - 8*x(2) + 8*x(3)];
+  function g = grad(x)
+    g = [16*x(1)*(x(1).^2 + x(2) - x(3) 
+         8*x(1).^2 + 8*x(2) - 8*x(3)
+        -8*x(1).^2 - 8*x(2) + 8*x(3)];
     end
 
-Matlab solution:
+Matlab solution
 
 .. code-block:: matlab
+
   f = @(x) 4*(x(1).^2 + x(2)-x(3)).^2 +10;
   x0 = [3,3,3];
   xopt = fminsearch(f,x0)
   xopt =
     0.8911    3.4610    4.2551
-
 
    
 
