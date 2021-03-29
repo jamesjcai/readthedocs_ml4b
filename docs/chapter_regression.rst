@@ -88,6 +88,8 @@ Therefore, we obtain the final format
 
 So, this is the finally derived Normal Equation with :math:`\theta` giving the minimum cost value.
 
+Ref: https://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression/
+
 
 
   
