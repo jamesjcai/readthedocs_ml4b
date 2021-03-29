@@ -236,6 +236,33 @@ For linear regression, the derivatives wrt slope m and intercept c are given in 
 
   print (m, c)
 
+Here is how the derivates wrt :math:`m` and :math:`c` are computed using Matlab symbolic.
+
+.. code-block:: matlab
+  
+  syms x y m c
+  f=0.5*(y-(m*x+c))^2
+  f =
+    (c - y + m*x)^2/2
+  diff(f,m)
+    ans =
+    x*(c - y + m*x)
+  diff(f,c)
+    ans =
+    c - y + m*x
+
+Therefore the cost function is:
+
+.. code-block:: matlab
+
+    function g = grad(m,c,X,Y)
+      n=length(Y);
+      Y_pred = m*X + c;
+      D_m = (-2/n) * sum(X * (Y - Y_pred))  % Derivative wrt m
+      D_c = (-2/n) * sum(Y - Y_pred)        % Derivative wrt c
+      g=[D_m D_c];
+    end
+
 
 
 
