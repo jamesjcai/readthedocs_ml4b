@@ -207,7 +207,7 @@ Therefore, the objective function is defined as the follows:
         -8*x(1).^2 - 8*x(2) + 8*x(3)];
     end
 
-Matlab solution
+Matlab solution using `FMINSEARCH` is as follows
 
 .. code-block:: matlab
 
@@ -217,7 +217,24 @@ Matlab solution
   xopt =
     0.8911    3.4610    4.2551
 
-   
+For linear regression, the derivatives wrt slope m and intercept c are given in the following format. See https://machinelearningmastery.com/linear-regression-tutorial-using-gradient-descent-for-machine-learning/
+
+.. code-block:: python
+
+  L = 0.0001  # The learning Rate
+  epochs = 1000  # The number of iterations to perform gradient descent
+
+  n = float(len(X)) # Number of elements in X
+
+  # Performing Gradient Descent 
+  for i in range(epochs): 
+      Y_pred = m*X + c  # The current predicted value of Y
+      D_m = (-2/n) * sum(X * (Y - Y_pred))  # Derivative wrt m
+      D_c = (-2/n) * sum(Y - Y_pred)  # Derivative wrt c
+      m = m - L * D_m  # Update m
+      c = c - L * D_c  # Update c
+
+  print (m, c)
 
 
 
