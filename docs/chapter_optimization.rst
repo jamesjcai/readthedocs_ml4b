@@ -115,6 +115,109 @@ A weight can be any real-valued number. For example, we may give these weights t
 Gradient Descent
 ----------------
 
+Let's solve the first example optimization problem. We are going to find the optimized solution to minimize the output value of a function :math:`f(x_1,x_2)=x_1^2 + x_1*x_2 + 3x_2^2`.
+
+.. code-block:: matlab
+  
+  syms x1 x2
+  f=x1^2+x1*x2+3*x2^2
+  diff(f,x1)
+  ans =
+     2*x1 + x2
+  diff(f,x2)
+  ans =
+    x1 + 6*x2
+
+With this informaiton, we can define the gradient of the objective:
+
+.. code-block:: matlab
+  
+  function g = grad(x)
+    g = [2*x(1)+x(2) x(1)+6*x(2)];
+  end
+  
+Here is the code of `grad_descent` by James T. Allison.
+
+.. code-block:: matlab
+  
+  function [xopt,fopt,niter,gnorm,dx] = grad_descent(varargin)
+    tol = 1e-6; % termination tolerance
+    maxiter = 1000; % maximum number of allowed iterations
+    dxmin = 1e-6; % minimum allowed perturbation
+    alpha = 0.1;  % step size ( 0.33 causes instability, 0.2 quite accurate)
+    gnorm = inf; x = x0; niter = 0; dx = inf; % initialize gradient norm, optimization vector, iteration counter, perturbation
+    f = @(x1,x2) x1.^2 + x1.*x2 + 3*x2.^2;  % define the objective function:
+    f2 = @(x) f(x(1),x(2)); % redefine objective function syntax for use with optimization:
+    % gradient descent algorithm:
+    while and(gnorm>=tol, and(niter <= maxiter, dx >= dxmin))    
+        g = grad(x);  % calculate gradient:
+        gnorm = norm(g);    
+        xnew = x - alpha*g;  % take step:
+        % check step
+        if ~isfinite(xnew)
+            display(['Number of iterations: ' num2str(niter)])
+            error('x is inf or NaN')
+        end
+        % update termination metrics
+        niter = niter + 1;
+        dx = norm(xnew-x);
+        x = xnew;    
+    end
+    xopt=x;
+    fopt=f2(xopt);
+    niter=niter-1;
+  end
+
+The same results should be obtained using fminsearch
+
+.. code-block:: matlab
+  
+  f = @(x) x(1).^2 + x(1)*x(2) + 3*x(2).^2;
+  x0 = [3,3];
+  xopt = fminsearch(f,x0)
+  xopt =
+   1.0e-04 *
+    0.4246   -0.2823
+    
+Let's try another example :math:`f(x_1,x_2,x_3)=4(x_1^2+x_2-x_3)^2+10`
+
+.. code-block:: matlab
+   
+   syms x1 x2 x3
+   f=4*(x1^2+x2-x3)^2+10
+   diff(f,x1)
+   ans =
+   16*x1*(x1^2 + x2 - x3)
+   diff(f,x2)
+   ans =
+   8*x1^2 + 8*x2 - 8*x3
+   diff(f,x3)
+   ans =
+    - 8*x1^2 - 8*x2 + 8*x3
+
+Therefore, the objective function is defined as the follows:
+
+.. code-block:: matlab
+
+    function g = grad(x)
+      g = [16*x(1)*(x(1).^2 + x(2) - x(3) 
+           8*x(1).^2 + 8*x(2) - 8*x(3)
+           -8*x(1).^2 - 8*x(2) + 8*x(3)];
+    end
+
+Matlab solution:
+
+.. code-block:: matlab
+  f = @(x) 4*(x(1).^2 + x(2)-x(3)).^2 +10;
+  x0 = [3,3,3];
+  xopt = fminsearch(f,x0)
+  xopt =
+    0.8911    3.4610    4.2551
+
+
+   
+
+
 
 
 .. |optimization1| image:: https://docs.microsoft.com/en-us/azure/quantum/media/plot_simple.png
