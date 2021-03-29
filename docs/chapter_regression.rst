@@ -84,9 +84,9 @@ Therefore, we obtain the final format
 
 .. math::
 
-  2X^{T}X\theta = 2X^{T}y
+  \theta = (X^{T}X)^{-1}\cdot(X^{T}y)
 
-So, this is the finally derived Normal Equation with θ giving the minimum cost value.
+So, this is the finally derived Normal Equation with :math:`\theta` giving the minimum cost value.
 
 
 
