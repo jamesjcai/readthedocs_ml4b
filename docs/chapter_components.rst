@@ -41,11 +41,31 @@ https://stats.stackexchange.com/questions/2691/making-sense-of-principal-compone
 
 https://www.ece.rutgers.edu/~orfanidi/ece525/svd.pdf
 
-
-
-
 Computing PCs using the covariance method
 -----------------------------------------
+
+.. code-block:: matlab
+
+  load hald
+  X=ingredients;
+  [coeff,score1] = pca(X);
+  
+  A=X-mean(X);
+  C=cov(A);
+  [V,D]=eig(C);
+  W=fliplr(V);
+  % score2=(W'*A')';
+  score2=A*W;
+
+  figure;
+  plot(score1(:,1),score1(:,2),'o')
+  hold on
+  plot(score2(:,1),score2(:,2),'x')
+  
+
+
+Why eigen vector of covariance matrix works
+-------------------------------------------
 The eigenvalues of the covariance matrix encode the variability of the data in an orthogonal basis that captures as much of the data's variability as possible in the first few basis functions (aka the principle component basis). https://www.mathworks.com/matlabcentral/answers/73298-what-does-eigenvalues-expres-in-the-covariance-matrix 
 
 Proof: direction of the greatest variance is eigenvector - Finding the eigen vector of covariance matrix is a way to maximize the variance.
@@ -94,28 +114,6 @@ This is a real-data example to show that if we define this vector as :math:`\vec
 
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
 
-Computing PCs using the covariance method
------------------------------------------
-
-.. code-block:: matlab
-
-  load hald
-  X=ingredients;
-  [coeff,score1] = pca(X);
-  
-  A=X-mean(X);
-  C=cov(A);
-  [V,D]=eig(C);
-  W=fliplr(V);
-  % score2=(W'*A')';
-  score2=A*W;
-
-  figure;
-  plot(score1(:,1),score1(:,2),'o')
-  hold on
-  plot(score2(:,1),score2(:,2),'x')
-  
-  
 
 Relationship between PCA and SVD
 --------------------------------
