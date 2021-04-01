@@ -50,7 +50,7 @@ The eigenvalues of the covariance matrix encode the variability of the data in a
 
 Proof: direction of the greatest variance is eigenvector - Finding the eigen vector of covariance matrix is a way to maximize the variance.
 
-.. code-block:: text
+.. code-block:: matlab
 
   >> data
   data =
@@ -94,6 +94,29 @@ This is a real-data example to show that if we define this vector as :math:`\vec
 
 https://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/
 
+Computing PCs using the covariance method
+-----------------------------------------
+
+.. code-block:: matlab
+
+  load hald
+  X=ingredients;
+  [coeff,score1] = pca(X);
+  
+  A=X-mean(X);
+  C=cov(A);
+  [V,D]=eig(C);
+  W=fliplr(V);
+  % score2=(W'*A')';
+  score2=A*W;
+
+  figure;
+  plot(score1(:,1),score1(:,2),'o')
+  hold on
+  plot(score2(:,1),score2(:,2),'x')
+  
+  
+
 Relationship between PCA and SVD
 --------------------------------
 PCA and SVD are closely related approaches and can be both applied to decompose any rectangular matrices. We can look into their relationship by performing SVD on the covariance matrix C:
@@ -109,7 +132,7 @@ https://towardsdatascience.com/pca-and-svd-explained-with-numpy-5d13b0d2a4d8
 Computing PCs using optimization
 --------------------------------
 
-.. code-block:: text
+.. code-block:: matlab
 
   load hald
   X=ingredients;
