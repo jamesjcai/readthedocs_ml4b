@@ -94,6 +94,7 @@ Ref: https://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-li
 Gradient Descent for Linear Regression
 --------------------------------------
 
+https://youtu.be/B3w5Zzuqi-E?t=449
 https://youtu.be/B3w5Zzuqi-E?t=718
 
 
