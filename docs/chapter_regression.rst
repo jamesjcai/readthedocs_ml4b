@@ -91,6 +91,12 @@ So, this is the finally derived Normal Equation with :math:`\theta` giving the m
 Ref: https://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression/
 
 
+Gradient Descent for Linear Regression
+--------------------------------------
+
+https://youtu.be/B3w5Zzuqi-E?t=718
+
+
 LASSO
 -----
 
