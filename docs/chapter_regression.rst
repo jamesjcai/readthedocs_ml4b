@@ -166,3 +166,49 @@ selecting λ, their differences, and how you can control the selection process.
 
 Ref: https://www.stata.com/manuals/lassolassointro.pdf
 
+
+Logistic regression
+-------------------
+
+Logistic regression is following :
+
+first we are calculating logit which is equal to
+
+L=b0+b1*x
+
+then we are calculating probability which is equal to p=e^L/(1+e^L)
+
+and finally we are calculating
+
+y*ln(p)+(1-y)*ln(1-p)
+
+.. code-block:: matlab
+
+  function B=logistic_regression(x,y)
+    f=@(a)(sum(y.*log((exp(a(1)+a(2)*x)/(1+exp(a(1)+a(2)*x))))+(1-y).*log((1-((exp(a(1)+a(2)*x)/(1+exp(a(1)+a(2)*x))))))));
+    a=[0.1, 0.1];
+    options = optimset('PlotFcns',@optimplotfval);
+    B = fminsearch(f,a, options);
+  end
+
+In order to implement a logistic regression model, I usually call the glmfit function, which is the simpler way to go. The syntax is:
+
+.. code-block:: matlab
+
+  b = glmfit(x,y,'binomial','link','logit');
+
+b is a vector that contains the coefficients for the linear portion of the logistic regression (the first element is the constant term alpha of the regression). x contains the predictors data, with one row for each observation and one column for each variable. y contains the target variable, usually a vector of boolean (0 or 1) values representing the outcome.
+
+Once you obtain the coefficients, you have to apply the linear part of the regression to your predictors:
+
+.. code-block:: matlab
+  
+  z = b(1) + (x * b(2));
+
+To finish, you must apply the logistic function to the output of the linear part:
+
+.. code-block:: matlab
+
+  z = 1 ./ (1 + exp(-z));
+
+https://stackoverflow.com/questions/47247946/logistic-regression-in-matlab
