@@ -36,7 +36,7 @@ To get a magnitude of 1, just divide any of those vectors by their magnitude.
 https://www.youtube.com/watch?v=FCmH4MqbFGs
 
 
-.. code-block:: text
+.. code-block:: matlab
 
   function [a1cmp] = ortc(a1)
   %ORTC Orthogonal complement of column matrix.
@@ -66,7 +66,7 @@ There are many ways to construct the orthonormal basis U starting with B. One
 is through the SVD implemented into the function orth. Another is through the QRfactorization, which is equivalent to the Gram-Schmidt orthogonalization process.
 The two alternatives are:
 
-.. code-block:: text
+.. code-block:: matlab
   U = orth(B); % SVD-based
   U = qr(B,0); % QR-factorization
 
